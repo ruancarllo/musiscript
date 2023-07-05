@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script defer src="script.js"></script>
+		<link rel="stylesheet" href="style.css">
+		<title>MusiScript</title>
+	</head>
+	<body>
+		<div class="interface">
+			<div class="lateral-menu">
+				<div class="saved-musics"></div>
+				<div class="buttons">
+				<div class="controls">
+					<div class="play" onclick="playMusic()">
+						<div class="symbol" id="play"></div>
+					</div>
+					<div class="pause">
+						<div class="symbol" id="pause">
+							<div class="bars">
+								<div class="bar"></div>
+								<div class="bar"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="save" onclick="saveMusic()">Save music</div>
+				</div>
+			</div>
+			<div class="internal-region">
+				<p class="title" onclick="playMusic(true)">MusiScript</p>
+				<div class="creation-area">
+					<div class="settings">
+						<input type="text" id="music-name" placeholder="Name"></input>
+						<input type="text" id="music-bpm" placeholder="BPM"></input>
+						<input type="text" id="music-robotization" placeholder="Type"></input>
+					</div>
+					<div class="voices">
+						<div id="soprano">
+							<div class="voice-name">Soprano</div>
+							<textarea></textarea>
+						</div>
+						<div id="contralto">
+							<div class="voice-name">Contralto</div>
+							<textarea></textarea>
+						</div>
+						<div id="tenor">
+							<div class="voice-name">Tenor</div>
+							<textarea></textarea>
+						</div>
+						<div id="bass">
+							<div class="voice-name">Bass</div>
+							<textarea></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="inferior-region">
+					<div class="experiments-area">
+						<div class="piano">
+							<div class="white-key" id="first" onclick="playMelody(['D4-0.2'], 60, 2, false)"></div>
+							<div class="white-key" id="middle" onclick="playMelody(['R4-0.2'], 60, 2, false)"></div>
+							<div class="white-key" id="middle" onclick="playMelody(['M4-0.2'], 60, 2, false)"></div>
+							<div class="white-key" id="middle" onclick="playMelody(['F4-0.2'], 60, 2, false)"></div>
+							<div class="white-key" id="middle" onclick="playMelody(['S4-0.2'], 60, 2, false)"></div>
+							<div class="white-key" id="middle" onclick="playMelody(['L4-0.2'], 60, 2, false)"></div>
+							<div class="white-key" id="middle" onclick="playMelody(['I4-0.2'], 60, 2, false)"></div>
+							<div class="white-key" id="last" onclick="playMelody(['D5-0.2'], 60, 2, false)"></div>
+							<div class="black-key" id="A" onclick="playMelody(['D4s-0.2'], 60, 2, false)"></div>
+							<div class="black-key" id="B" onclick="playMelody(['R4s-0.2'], 60, 2, false)"></div>
+							<div class="black-key" id="C" onclick="playMelody(['F4s-0.2'], 60, 2, false)"></div>
+							<div class="black-key" id="D" onclick="playMelody(['S4s-0.2'], 60, 2, false)"></div>
+							<div class="black-key" id="E" onclick="playMelody(['L4s-0.2'], 60, 2, false)"></div>
+						</div>
+						<textarea class="annotations-area" placeholder="Annotations"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
