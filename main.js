@@ -67,7 +67,7 @@ class Source {
 }
 
 async function main() {
-	let indexFile = path.join(Source.target, 'home.html');
+	let indexFile = path.join(Source.target, 'index.html');
 
 	Source.compile();
 
