@@ -20,7 +20,7 @@ function removeDirectory(directoryPath) {
 
 class Source {
 	static origin = path.join(__dirname, 'src');
-	static target =  path.join(__dirname, 'dist');
+	static target =  path.join(__dirname, 'docs');
 
 	static files = fs.readdirSync(Source.origin);
 
